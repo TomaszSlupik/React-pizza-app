@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	font-family: "Montserrat", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.App {
+	position: relative;
+	height: 100vh;
+}
+
+.App-header-box {
+	position: relative;
+	height: 300px;
+	width: 100%;
+}
+
+.App-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+.containerbuy {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.boxbuy {
+	height: 100%;
+	width: 50%;
+}
+
+.namepizza {
+	font-size: 2rem;
+	margin-right: 0.5em;
+}
+
+.imgpizza {
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	margin: 0.5em;
+}
+
+.layoutitem {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	margin-right: 1em;
+}
+
+.layoutitemall {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	margin-top: 2em;
+}
+
+.pricepizza {
+	font-size: 1.8rem;
+}
+@media (max-width: 568px) {
+	.layoutitemall {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (min-width: 568px) and (max-width: 1200px) {
+	.layoutitemall {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

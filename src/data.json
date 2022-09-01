@@ -1,0 +1,29 @@
+[
+	{
+		"name": "ser",
+		"price": "120"
+	},
+
+    {
+		"name": "papryka",
+		"price": "300"
+	},
+
+    {
+		"name": "ananas",
+		"price": "500"
+	}, 
+	{
+		"name": "mięso",
+		"price": "200"
+	},
+	{
+		"name": "oliwki",
+		"price": "110"
+	},
+	{
+		"name": "pomidor",
+		"price": "330"
+	}
+]
+
