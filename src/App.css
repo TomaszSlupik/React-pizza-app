@@ -132,7 +132,8 @@ html {
 }
 
 .btn,
-.btntwo {
+.btntwo,
+.btnthree {
 	width: 120px;
 	height: 40px;
 	cursor: pointer;
@@ -145,6 +146,11 @@ html {
 
 .btntwo {
 	background-color: red;
+}
+
+.btnthree {
+	margin-top: 10px;
+	background-color: green;
 }
 
 .btn:hover {

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 
+
+
 function Second(props) {
 	const [price, setPrice] = useState(0);
 	const [order, setOrder] = useState([]);
@@ -21,6 +23,11 @@ function Second(props) {
 		setOrder(deleteorder)
 	}
 
+	const buy = () => {
+		props.history.push ('/koszyk')
+	
+	}
+
 
 	return (
 		<div>
@@ -39,8 +46,10 @@ function Second(props) {
 			})}
 			<p className="navnext">------</p>
 			<p className="finall">Do zapłaty {(price /100).toFixed(2)} zł</p>
+			
+			<button className="btnthree" onClick={()=>buy()}>Zapłać</button>
 		</div>
 	);
 }
 
-export default Second;
+export default Second
