@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import First from "./components/first";
 import Second from "./components/second";
 import { useState } from "react";
-import Third from "./components/third";
+
 
 
 function App() {
@@ -17,11 +16,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<div className="App-header-box">
-				<div className="header-img"></div>
-				<div className="shadow"></div>
-				<h1 className="App-header">Zamów pizzę</h1>
-			</div>
+			
 
 			<div className="containerbuy">
 				<div className="boxbuy">

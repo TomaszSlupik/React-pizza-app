@@ -1,7 +1,7 @@
 import React from "react";
 
 class Third extends React.Component {
-	rendr() {
+	render() {
 		return (
 			<div>
 				<h1>Koszyk</h1>

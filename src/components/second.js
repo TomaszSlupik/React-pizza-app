@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { withRouter } from "react-router-dom";
 
 
 
@@ -52,4 +53,4 @@ function Second(props) {
 	);
 }
 
-export default Second
+export default withRouter(Second)
