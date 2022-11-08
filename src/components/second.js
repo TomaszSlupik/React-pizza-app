@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { withRouter } from "react-router-dom";
+import { CtxConsumer } from "../index";
 
 
 
@@ -24,14 +25,18 @@ function Second(props) {
 		setOrder(deleteorder)
 	}
 
-	const buy = () => {
+	const buy = (context) => {
+		context.refresh(price)
 		props.history.push ('/koszyk')
 	
 	}
 
 
 	return (
-		<div>
+		<CtxConsumer>
+			{
+				context => (
+			<div>
 			<h1 className="nav">Twoje zamówienie</h1>
 			{order.map((pizza, index) => {
 				return (
@@ -48,8 +53,12 @@ function Second(props) {
 			<p className="navnext">------</p>
 			<p className="finall">Do zapłaty {(price /100).toFixed(2)} zł</p>
 			
-			<button className="btnthree" onClick={()=>buy()}>Zapłać</button>
+			<button className="btnthree" onClick={()=>buy(context)}>Zapłać</button>
 		</div>
+				)
+			}
+		</CtxConsumer>
+		
 	);
 }
 

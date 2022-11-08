@@ -1,6 +1,6 @@
 import "./App.css";
 import First from "./components/first";
-import Second from "./components/second";
+import Second from "./components/Second";
 import { useState } from "react";
 
 
